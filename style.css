@@ -386,31 +386,39 @@ img {
 }
 
 /* form */
+/* Contact Section */
 #contact {
-  background: var(--cream);
-  padding: 60px 20px;
+  background-color: var(--cream);
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: 'Segoe UI', sans-serif;
-  color: var(--black);
   text-align: center;
 }
 
+/* Heading */
 #contact h2 {
   font-size: 36px;
   color: var(--green-dark);
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
-/* Form Container */
+/* Centered Form */
 #contact form {
+  width: 100%;
   max-width: 550px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 35px;
+  background-color: #fff;
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  text-align: left;
-  transition: transform 0.3s ease;
   border: 2px solid var(--green);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 #contact form:hover {
@@ -419,11 +427,12 @@ img {
 
 /* Labels */
 #contact label {
-  display: block;
-  font-weight: 600;
+  align-self: flex-start;
   margin-bottom: 8px;
   color: var(--green-dark);
   font-size: 15px;
+  font-weight: 600;
+  width: 100%;
 }
 
 /* Inputs & Textareas */
@@ -436,8 +445,8 @@ img {
   border-radius: 8px;
   font-size: 15px;
   background-color: var(--cream);
-  transition: all 0.3s ease;
   color: var(--black);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contact input:focus,
@@ -449,24 +458,24 @@ img {
 
 /* Submit Button */
 #contact button {
-  background: var(--accent);
+  background-color: var(--accent);
   color: #fff;
   border: none;
   padding: 14px 28px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #contact button:hover {
-  background: var(--mustard);
-  transform: scale(1.05);
+  background-color: var(--mustard);
   color: var(--black);
+  transform: scale(1.05);
 }
 
-/* Responsive Layout */
+/* Mobile Responsive */
 @media (max-width: 600px) {
   #contact form {
     padding: 25px;
