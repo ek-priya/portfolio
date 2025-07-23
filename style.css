@@ -411,72 +411,88 @@ img {
 /* form */
 /* Contact Section */
 #contact {
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
   padding: 60px 20px;
-  text-align: center;
   font-family: 'Segoe UI', sans-serif;
+  text-align: center;
 }
 
 #contact h2 {
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #006064;
 }
 
-/* Form Layout */
+/* Contact Form */
 #contact form {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: left;
-  background: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#contact form:hover {
+  transform: translateY(-5px);
 }
 
 /* Labels */
 #contact label {
   display: block;
-  margin-bottom: 6px;
-  color: #555;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
 }
 
-/* Input Fields */
+/* Inputs and Textarea */
 #contact input,
 #contact textarea {
   width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 20px;
+  padding: 12px 15px;
+  margin-bottom: 25px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 15px;
-  box-sizing: border-box;
-  transition: border 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fdfdfd;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-  border-color: #007bff;
+  border-color: #26c6da;
+  box-shadow: 0 0 8px rgba(38, 198, 218, 0.2);
   outline: none;
 }
 
 /* Submit Button */
 #contact button {
-  background-color: #007bff;
+  background: #26c6da;
   color: #fff;
-  padding: 12px 25px;
   border: none;
-  border-radius: 6px;
+  padding: 14px 28px;
   font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #contact button:hover {
-  background-color: #0056b3;
+  background: #00acc1;
+  transform: scale(1.05);
 }
 
-  font-weight: bold;
-  cursor: pointer;
+/* Responsive */
+@media (max-width: 600px) {
+  #contact form {
+    padding: 25px;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
 }
