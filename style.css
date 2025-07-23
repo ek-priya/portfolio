@@ -409,30 +409,31 @@ img {
 }
 
 /* form */
-/* Contact Section */
 #contact {
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  background: var(--cream);
   padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
+  color: var(--black);
   text-align: center;
 }
 
 #contact h2 {
   font-size: 36px;
+  color: var(--green-dark);
   margin-bottom: 40px;
-  color: #006064;
 }
 
-/* Contact Form */
+/* Form Container */
 #contact form {
   max-width: 550px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #fff;
   padding: 35px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   text-align: left;
   transition: transform 0.3s ease;
+  border: 2px solid var(--green);
 }
 
 #contact form:hover {
@@ -444,33 +445,34 @@ img {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #333;
+  color: var(--green-dark);
   font-size: 15px;
 }
 
-/* Inputs and Textarea */
+/* Inputs & Textareas */
 #contact input,
 #contact textarea {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 25px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--green);
   border-radius: 8px;
   font-size: 15px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fdfdfd;
+  background-color: var(--cream);
+  transition: all 0.3s ease;
+  color: var(--black);
 }
 
 #contact input:focus,
 #contact textarea:focus {
-  border-color: #26c6da;
-  box-shadow: 0 0 8px rgba(38, 198, 218, 0.2);
+  border-color: var(--mustard);
   outline: none;
+  box-shadow: 0 0 8px rgba(243, 166, 59, 0.3);
 }
 
 /* Submit Button */
 #contact button {
-  background: #26c6da;
+  background: var(--accent);
   color: #fff;
   border: none;
   padding: 14px 28px;
@@ -482,11 +484,12 @@ img {
 }
 
 #contact button:hover {
-  background: #00acc1;
+  background: var(--mustard);
   transform: scale(1.05);
+  color: var(--black);
 }
 
-/* Responsive */
+/* Responsive Layout */
 @media (max-width: 600px) {
   #contact form {
     padding: 25px;
