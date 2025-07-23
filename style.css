@@ -407,3 +407,30 @@ img {
   opacity: 1;
   transform: none;
 }
+
+/* form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--accent-color);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
