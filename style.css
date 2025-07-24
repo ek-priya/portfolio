@@ -78,9 +78,38 @@ img {
   gap: 1.5rem;
   align-items: center;
 }
+
+/* Base Link Style */
 .navbar a {
   font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  color: var(--black); /* Adjust as needed */
+  transition: color 0.3s ease;
 }
+
+/* Hover Effect */
+.navbar a:hover {
+  color: var(--black); /* Use your color palette variable */
+}
+
+/* Underline on Hover */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Distance from text */
+  width: 0%;
+  height: 2px;
+  background-color: var(--black);
+  transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.navbar a:hover::after {
+  width: 100%;
+}
+
 .burger {
   display: none;
   font-size: 1.5rem;
@@ -394,7 +423,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
@@ -410,7 +439,7 @@ img {
 #contact form {
   width: 100%;
   max-width: 550px;
-  background-color: #fff;
+  background-color: var(--cream);
   padding: 40px;
   border-radius: 12px;
   border: 2px solid var(--green);
@@ -428,6 +457,7 @@ img {
 /* Labels */
 #contact label {
   align-self: flex-start;
+  text-align: left;
   margin-bottom: 8px;
   color: var(--green-dark);
   font-size: 15px;
